@@ -1,0 +1,11 @@
+app MidiaManager {
+  wasp: {
+    version: "^0.12.1"
+  },
+  title: "MidiaManager"
+}
+
+route RootRoute { path: "/", to: MainPage }
+page MainPage {
+  component: import { MainPage } from "@src/MainPage"
+}
